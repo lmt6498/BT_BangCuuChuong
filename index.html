@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng Cửu Chương</title>
+</head>
+<body>
+<h1 align="center">Bảng cửu chương</h1>
+<script>
+    let creTable;
+    creTable = "<table border='1' align='center'>"
+    for (var i = 1; i <= 9; i++) {
+        creTable = creTable + "<tr>";
+        for (var j = 2; j <= 9; j++) {
+            creTable = creTable + "<td width='100px'>" + j + "x" + i + "= " + j * i + "</td>";
+        }
+        creTable = creTable + "</tr>";
+    }
+    creTable = creTable + "</table>";
+    document.write(creTable);
+
+</script>
+</body>
+</html>
